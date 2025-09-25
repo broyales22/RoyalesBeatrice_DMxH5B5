@@ -2,27 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>H5B5 — Frollo Model on Hiro Marker</title>
+    <title>RoyalesBeatrice_DMxH5B5</title>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
   </head>
   <body>
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-
-        <!-- Frollo model -->
         <a-entity
-          gltf-model="scene.gltf"
-          scale="1 1 1"          
+          gltf-model="https://broyales22.github.io/RoyalesBeatrice_DMxH5B5/scene.gltf"
+          scale="3 3 3"
           position="0 0 0"
-          rotation="0 0 0">      
+          rotation="-90 0 0"> <!-- set the x value to -90 so the figure is perpendicular -->
         </a-entity>
-
-        <!-- Lighting -->
-        <a-entity light="type: directional; intensity: 1" position="1 2 1"></a-entity>
-        <a-entity light="type: ambient; intensity: 0.5"></a-entity>
-
       </a-marker>
+
       <a-entity camera></a-entity>
     </a-scene>
   </body>
